@@ -1,0 +1,62 @@
+{% load static %}  <!-- This MUST be at the top -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizApp Landing Page</title>
+    
+    <link rel="stylesheet" href="{% static 'student/css/landingpage.css' %}">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">QuizApp</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="login-btn" onclick="redirectToLogin()">Login</button>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Welcome to QuizApp</h1>
+        <p>Enhance your knowledge with interactive quizzes!</p>
+        <button class="cta-btn" onclick="getStarted()">Get Started</button>
+    </section>
+
+    <section class="features" id="features">
+        <h2>Features</h2>
+        <div class="feature-box">
+            <div class="feature">Interactive Quizzes</div>
+            <div class="feature">Track Your Progress</div>
+            <div class="feature">Compete with Friends</div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>QuizApp is designed to help students and teachers engage with learning through fun and interactive quizzes.</p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 QuizApp. All rights reserved.</p>
+    </footer>
+
+    <script src="{% static 'student/js/landingpage.js' %}"></script>
+</body>
+</html>
