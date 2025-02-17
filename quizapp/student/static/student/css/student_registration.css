@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  html, body {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    background: #be2edd;
+  }
+  
+  .container {
+    width: 700px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  
+  .col-6 {
+    flex: 1;
+  }
+  
+  .mb-3 {
+    margin-bottom: 15px;
+  }
+  
+  .form-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .form-control:focus {
+    border-color: #be2edd;
+    box-shadow: 0 0 5px rgba(190, 46, 221, 0.5);
+  }
+  
+  button.btn {
+    background: #be2edd;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button.btn:hover {
+    background: #a720c5;
+  }
+  
+  button.btn:active {
+    background: #9c1b9c;
+  }
+  
+  input[type="text"], input[type="email"], input[type="number"], input[type="password"] {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus {
+    border-color: #be2edd;
+    box-shadow: 0 0 5px rgba(190, 46, 221, 0.5);
+  }
+  
+  .form-control::placeholder {
+    font-size: 16px;
+    color: #888;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+  
+    .row {
+      flex-direction: column;
+    }
+  
+    .col-6 {
+      flex: none;
+      width: 100%;
+    }
+  }
+  

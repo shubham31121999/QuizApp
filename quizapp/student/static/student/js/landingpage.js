@@ -1,7 +1,7 @@
 // Redirect to login page
-function redirectToLogin() {
-    window.location.href = '/login/'; // Adjust the URL if needed
-}
+// function redirectToLogin() {
+//     window.location.href = "{% url 'loginpage' %}";
+// }
 
 // Smooth scroll to sections
 function getStarted() {
